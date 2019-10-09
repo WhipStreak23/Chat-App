@@ -93,7 +93,7 @@
 
    var momentTimestamp = moment.utc(message.timestamp).local().format("h:mm a");
    //$(".messages").append($('<p>').text(message.text));
-   $message.append("<strong>" + momentTimestamp + " " + message.name + "</strong>");
+   $message.append("<strong>" + message.name + "</strong>");
    $message.append("<p>" + message.text + "</p>");
    $messages.append($message);
    // handle autoscroll
