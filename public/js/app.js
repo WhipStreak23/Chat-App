@@ -148,11 +148,11 @@
    // $(".messages").append($('<p>').text(message.text));
    $message.append("<strong>" + name + "</strong>");
    //$message.append("<p>" + $message1.val()+ "</p>");
-   $message.append($("<p>", {
+   $message.append($("<p><b>", {
      class: "mymessages",
      text: $message1.val()
    }));
-   $messages.append("<b>" + $message + "</b>");
+   $messages.append($message);
    $message1.val('');
    // manage autoscroll
    var obj = $("ul.messages.list-group");
