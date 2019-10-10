@@ -34,7 +34,7 @@ function sendCurrentUsers(socket) { // loading current users
   // emit message when all users list
 
   socket.emit("message", {
-    name: "System",
+    name: "Synergo",
     text: "Current Users : " + users.join(', '),
     timestamp: moment().valueOf()
   });
@@ -54,7 +54,7 @@ io.on("connection", function(socket) {
       //broadcast leave room to only memebers of same room
       socket.broadcast.to(userdata.room).emit("message", {
         text: userdata.name + " has left",
-        name: "System",
+        name: "Synergo",
         timestamp: moment().valueOf()
       });
 
@@ -70,7 +70,7 @@ io.on("connection", function(socket) {
     socket.join(req.room);
     //broadcast new user joined room
     socket.broadcast.to(req.room).emit("message", {
-      name: "System",
+      name: "Synergo",
       text: req.name + ' has joined',
       timestamp: moment().valueOf()
     });
@@ -93,7 +93,7 @@ io.on("connection", function(socket) {
   socket.emit("message", {
     text: "Welcome to SynerChat!",
     timestamp: moment().valueOf(),
-    name: "System"
+    name: "Synergo"
   });
 
   // listen for client message
