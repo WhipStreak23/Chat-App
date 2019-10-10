@@ -146,7 +146,7 @@
 
    var momentTimestamp = moment().format("h:mm a");
    // $(".messages").append($('<p>').text(message.text));
-   $message.append("<strong>" + momentTimestamp + " " + name + "</strong>");
+   $message.append("<strong>" + name + "</strong>");
    //$message.append("<p>" + $message1.val()+ "</p>");
    $message.append($("<p>", {
      class: "mymessages",
