@@ -150,7 +150,7 @@
    //$message.append("<p>" + $message1.val()+ "</p>");
    $message.append($("<p>", {
      class: "mymessages",
-     text: $message1.val()
+     text: "<b>" + $message1.val() + "<\b>"
    }));
    $messages.append($message);
    $message1.val('');
