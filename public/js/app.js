@@ -2,7 +2,7 @@
  // listen for server connection
  // get query params from url
  var name = getQueryVariable("name") || 'Anonymous';
- var room = getQueryVariable("room") || 'No Room Selected';
+ var room = getQueryVariable("room") || 'General Chat';
 
  $(".room-title").text(room);
  // fires when client successfully conencts to the server
