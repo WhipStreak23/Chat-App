@@ -15,8 +15,7 @@ h1 {
 }
 .mymessages {
   text-align: right;
-  color: #2E6D88;
-  font-style: italic;
+  background-color: #97d682;
 }
 ul.messages.list-group {
   max-height: 50vh;
