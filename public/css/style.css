@@ -15,7 +15,7 @@ h1 {
 }
 .mymessages {
   text-align: right;
-  font-style: bold;
+  font-style: italic;
   
 }
 ul.messages.list-group {
