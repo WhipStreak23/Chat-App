@@ -58,6 +58,7 @@
    visibilityChange = "webkitvisibilitychange";
  }
 
+
  //listening for typing  event
  socket.on("typing", function(message) { //console.log(message.text);
    $(".typing").text(message.text);
@@ -154,6 +155,15 @@
    }));
    $messages.append($message);
    $message1.val('');
+  if ($message === "?members")
+  {
+    socket.emit("message", {
+    name: "Synergo",
+    text: "Current Users : " + users.join(', '),
+    timestamp: moment().valueOf()
+  });
+
+  }
    // manage autoscroll
    var obj = $("ul.messages.list-group");
    var offset = obj.offset();
